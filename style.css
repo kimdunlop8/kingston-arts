@@ -1,0 +1,58 @@
+:root {
+  --red: #d74126;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-inline: 0.5rem;
+  margin-block: 4rem;
+}
+
+body>* {
+  max-width: 40rem;
+  margin-inline: auto;
+  font-size: 1.2rem;
+}
+
+#logo {
+  padding-bottom: 1rem;
+}
+
+summary {
+  margin-bottom: 2rem;
+}
+
+.concert {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .date {
+    color: var(--red);
+  }
+
+  .name {
+    font-weight: bold;
+  }
+}
+
+.button {
+  padding-block: 1rem;
+  padding-inline: 2rem;
+  color: white;
+  background-color: var(--red);
+  border-radius: 40px;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+
+  &:hover {
+    opacity: 80%;
+  }
+}
